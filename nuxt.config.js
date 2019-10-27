@@ -62,7 +62,7 @@ export default {
     routes: () => {
       return EventService.getEvents().then(response => {
         return response.data.map(event => {
-          return '/event/' + event.id;
+          return '/event/' + event.id ;
         })
       })
     }
